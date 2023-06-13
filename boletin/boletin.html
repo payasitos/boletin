@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="boletin.css">
+    <script src="boletin.js"></script>
+    <title>boletin</title>
+</head>
+
+<body>
+
+    <div class="datos">
+
+        <form>
+            <fieldset id="num1">
+                <legend>datos personales</legend>
+                <label>nombre completo</label>
+                <br>
+                <input type="text" id="name">
+                <br>
+                <br>
+                <label>curso</label>
+                <br>
+                <input type="text" id="year">
+                <br>
+                <br>
+                <label>fecha de emision</label>
+                <br>
+                <input type="date" id="emition">
+                <br>
+                <br>
+                <input type="button" onclick="Cargar()" value="ingresar">
+            </fieldset>
+        </form>
+
+    </div>
+
+    <div class="padre"></div>
+
+    <div>
+        <form>
+            <fieldset id="num2">
+                <legend>materias</legend>
+                <label>materia</label>
+                <br>
+                <input type="text" id="subject">
+                <br>
+                <br>
+                <label>nota n°1</label>
+                <br>
+                <input type="number" id="first">
+                <br>
+                <br>
+                <label>nota n°2</label>
+                <br>
+                <input type="number" id="second">
+                <br>
+                <br>
+                <input type="button" onclick="ingresar()" value="ingresar">
+            </fieldset>
+        </form>
+    </div>
+
+
+    <div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>materias</th>
+                    <th>primer cuatrimestre</th>
+                    <th>segundo cuatrimestre</th>
+                    <th>promedio</th>
+                </tr>
+            </thead>
+            <tbody class="abuelo">
+
+            </tbody>
+            <tfoot>
+                <th id="foot" colspan="4"></th>
+
+            </tfoot>
+        </table>
+
+    </div>
+    <br>
+    <br>
+    <input type="button" id="imprice" onclick="Imprimir()" value="imprimir">
+
+    <div>
+        <img src="https://www.cet30.edu.ar/assets/logo.png" alt="logo">
+    </div>
+</body>
+
+</html>
